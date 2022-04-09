@@ -37,9 +37,7 @@ const useAnswersList = (videoID) => {
 
             }
         }
-        setTimeout(() => {
-            fetchVideos()
-        }, 2000)
+        fetchVideos()
     }, [videoID])
 
     return {

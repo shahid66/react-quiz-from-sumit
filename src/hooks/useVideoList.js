@@ -15,7 +15,7 @@ const useVideoList = (page) => {
                 videosRef,
                 orderByKey(),
                 startAt("" + page),
-                limitToFirst(8)
+                limitToFirst(11)
             );
 
             try {
@@ -38,9 +38,7 @@ const useVideoList = (page) => {
 
             }
         }
-        setTimeout(() => {
-            fetchVideos()
-        }, 2000)
+        fetchVideos()
     }, [page])
 
     return {
